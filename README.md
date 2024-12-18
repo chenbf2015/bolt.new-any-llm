@@ -1,17 +1,28 @@
-[![Bolt.new: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://bolt.new)
+[![bolt.diy: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://bolt.diy)
 
-# Bolt.new Fork by Cole Medin
+# bolt.diy (Previously oTToDev)
 
-This fork of Bolt.new allows you to choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
+Welcome to bolt.diy, the official open source version of Bolt.new (previously known as oTToDev and bolt.new ANY LLM), which allows you to choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, LMStudio, Mistral, xAI, HuggingFace, DeepSeek, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
 
-# Requested Additions to this Fork - Feel Free to Contribute!!
+Check the [bolt.diy Docs](https://stackblitz-labs.github.io/bolt.diy/) for more information. 
+
+We have also launched an experimental agent called the "bolt.diy Expert" that can answer common questions about bolt.diy. Find it here on the [oTTomator Live Agent Studio](https://studio.ottomator.ai/).
+
+bolt.diy was originally started by [Cole Medin](https://www.youtube.com/@ColeMedin) but has quickly grown into a massive community effort to build the BEST open source AI coding assistant!
+
+## Join the community for bolt.diy!
+
+https://thinktank.ottomator.ai
+
+
+## Requested Additions - Feel Free to Contribute!
 
 - ✅ OpenRouter Integration (@coleam00)
 - ✅ Gemini Integration (@jonathands)
 - ✅ Autogenerate Ollama models from what is downloaded (@yunatamos)
 - ✅ Filter models by provider (@jasonm23)
 - ✅ Download project as ZIP (@fabwaseem)
-- ✅ Improvements to the main Bolt.new prompt in `app\lib\.server\llm\prompts.ts` (@kofi-bhr)
+- ✅ Improvements to the main bolt.new prompt in `app\lib\.server\llm\prompts.ts` (@kofi-bhr)
 - ✅ DeepSeek API Integration (@zenith110)
 - ✅ Mistral API Integration (@ArulGandhi)
 - ✅ "Open AI Like" API Integration (@ZerxZ)
@@ -20,233 +31,186 @@ This fork of Bolt.new allows you to choose the LLM that you use for each prompt!
 - ✅ Publish projects directly to GitHub (@goncaloalves)
 - ✅ Ability to enter API keys in the UI (@ali00209)
 - ✅ xAI Grok Beta Integration (@milutinke)
-- ⬜ **HIGH PRIORITY** - Prevent Bolt from rewriting files as often (file locking and diffs)
+- ✅ LM Studio Integration (@karrot0)
+- ✅ HuggingFace Integration (@ahsan3219)
+- ✅ Bolt terminal to see the output of LLM run commands (@thecodacus)
+- ✅ Streaming of code output (@thecodacus)
+- ✅ Ability to revert code to earlier version (@wonderwhy-er)
+- ✅ Cohere Integration (@hasanraiyan)
+- ✅ Dynamic model max token length (@hasanraiyan)
+- ✅ Better prompt enhancing (@SujalXplores)
+- ✅ Prompt caching (@SujalXplores)
+- ✅ Load local projects into the app (@wonderwhy-er)
+- ✅ Together Integration (@mouimet-infinisoft)
+- ✅ Mobile friendly (@qwikode)
+- ✅ Better prompt enhancing (@SujalXplores)
+- ✅ Attach images to prompts (@atrokhym)
+- ✅ Added Git Clone button (@thecodacus)
+- ✅ Git Import from url (@thecodacus)
+- ✅ PromptLibrary to have different variations of prompts for different use cases (@thecodacus)
+- ✅ Detect package.json and commands to auto install & run preview for folder and git import (@wonderwhy-er)
+- ✅ Selection tool to target changes visually (@emcconnell)
+- ⬜ **HIGH PRIORITY** - Prevent bolt from rewriting files as often (file locking and diffs)
 - ⬜ **HIGH PRIORITY** - Better prompting for smaller LLMs (code window sometimes doesn't start)
-- ⬜ **HIGH PRIORITY** Load local projects into the app
-- ⬜ **HIGH PRIORITY** - Attach images to prompts
 - ⬜ **HIGH PRIORITY** - Run agents in the backend as opposed to a single model call
-- ⬜ Mobile friendly
-- ⬜ LM Studio Integration
-- ⬜ Together Integration
-- ⬜ Azure Open AI API Integration
-- ⬜ HuggingFace Integration
-- ⬜ Perplexity Integration
-- ⬜ Vertex AI Integration
-- ⬜ Cohere Integration
 - ⬜ Deploy directly to Vercel/Netlify/other similar platforms
-- ⬜ Ability to revert code to earlier version
-- ⬜ Prompt caching
-- ⬜ Better prompt enhancing
 - ⬜ Have LLM plan the project in a MD file for better results/transparency
 - ⬜ VSCode Integration with git-like confirmations
 - ⬜ Upload documents for knowledge - UI design templates, a code base to reference coding style, etc.
 - ⬜ Voice prompting
+- ⬜ Azure Open AI API Integration
+- ⬜ Perplexity Integration
+- ⬜ Vertex AI Integration
 
-# Bolt.new: AI-Powered Full-Stack Web Development in the Browser
+## bolt.diy Features
 
-Bolt.new is an AI-powered web development agent that allows you to prompt, run, edit, and deploy full-stack applications directly from your browser—no local setup required. If you're here to build your own AI-powered web dev agent using the Bolt open source codebase, [click here to get started!](./CONTRIBUTING.md)
+- **AI-powered full-stack web development** directly in your browser.
+- **Support for multiple LLMs** with an extensible architecture to integrate additional models.
+- **Attach images to prompts** for better contextual understanding.
+- **Integrated terminal** to view output of LLM-run commands.
+- **Revert code to earlier versions** for easier debugging and quicker changes.
+- **Download projects as ZIP** for easy portability.
+- **Integration-ready Docker support** for a hassle-free setup.
 
-## What Makes Bolt.new Different
+## Setup bolt.diy 
 
-Claude, v0, etc are incredible- but you can't install packages, run backends, or edit code. That’s where Bolt.new stands out:
+If you're new to installing software from GitHub, don't worry! If you encounter any issues, feel free to submit an "issue" using the provided links or improve this documentation by forking the repository, editing the instructions, and submitting a pull request. The following instruction will help you get the stable branch up and running on your local machine in no time.  
 
-- **Full-Stack in the Browser**: Bolt.new integrates cutting-edge AI models with an in-browser development environment powered by **StackBlitz’s WebContainers**. This allows you to:
-  - Install and run npm tools and libraries (like Vite, Next.js, and more)
-  - Run Node.js servers
-  - Interact with third-party APIs
-  - Deploy to production from chat
-  - Share your work via a URL
+### Prerequisites  
 
-- **AI with Environment Control**: Unlike traditional dev environments where the AI can only assist in code generation, Bolt.new gives AI models **complete control** over the entire  environment including the filesystem, node server, package manager, terminal, and browser console. This empowers AI agents to handle the whole app lifecycle—from creation to deployment.
+1. **Install Git**: [Download Git](https://git-scm.com/downloads)  
+2. **Install Node.js**: [Download Node.js](https://nodejs.org/en/download/)  
 
-Whether you’re an experienced developer, a PM, or a designer, Bolt.new allows you to easily build production-grade full-stack applications.
+   - After installation, the Node.js path is usually added to your system automatically. To verify:  
+     - **Windows**: Search for "Edit the system environment variables," click "Environment Variables," and check if `Node.js` is in the `Path` variable.  
+     - **Mac/Linux**: Open a terminal and run:  
+       ```bash  
+       echo $PATH  
+       ```  
+       Look for `/usr/local/bin` in the output.  
 
-For developers interested in building their own AI-powered development tools with WebContainers, check out the open-source Bolt codebase in this repo!
+### Clone the Repository  
 
-## Setup
+Clone the repository using Git:  
 
-Many of you are new users to installing software from Github. If you have any installation troubles reach out and submit an "issue" using the links above, or feel free to enhance this documentation by forking, editing the instructions, and doing a pull request.
+```bash  
+git clone -b stable https://github.com/stackblitz-labs/bolt.diy  
+```  
 
-1. Install Git from https://git-scm.com/downloads
+---
 
-2. Install Node.js from https://nodejs.org/en/download/ 
+## Run the Application  
 
-Pay attention to the installer notes after completion. 
+### Option 1: Without Docker
 
-On all operating systems, the path to Node.js should automatically be added to your system path. But you can check your path if you want to be sure. On Windows, you can search for "edit the system environment variables" in your system, select "Environment Variables..." once you are in the system properties, and then check for a path to Node in your "Path" system variable. On a Mac or Linux machine, it will tell you to check if /usr/local/bin is in your $PATH. To determine if usr/local/bin is included in $PATH open your Terminal and run:
+1. **Install Dependencies**:  
+   ```bash  
+   pnpm install  
+   ```  
+   If `pnpm` is not installed, install it using:  
+   ```bash  
+   sudo npm install -g pnpm  
+   ```  
 
-```
-echo $PATH .
-```
+2. **Start the Application**:  
+   ```bash  
+   pnpm run dev  
+   ```
+   This will start the Remix Vite development server. You will need Google Chrome Canary to run this locally if you use Chrome! It's an easy install and a good browser for web development anyway.  
 
-If you see usr/local/bin in the output then you're good to go.
+### Option 2: With Docker  
 
-3. Clone the repository (if you haven't already) by opening a Terminal window (or CMD with admin permissions) and then typing in this:
+#### Prerequisites  
+- Ensure Git, Node.js, and Docker are installed: [Download Docker](https://www.docker.com/)  
 
-```
-git clone https://github.com/coleam00/bolt.new-any-llm.git
-```
+#### Steps  
 
-3. Rename .env.example to .env.local and add your LLM API keys. You will find this file on a Mac at "[your name]/bold.new-any-llm/.env.example". For Windows and Linux the path will be similar.
+1. **Build the Docker Image**:  
 
-![image](https://github.com/user-attachments/assets/7e6a532c-2268-401f-8310-e8d20c731328)
+   Use the provided NPM scripts:  
+   ```bash  
+   npm run dockerbuild 
+   ```  
 
-If you can't see the file indicated above, its likely you can't view hidden files. On Mac, open a Terminal window and enter this command below. On Windows, you will see the hidden files option in File Explorer Settings. A quick Google search will help you if you are stuck here.
+   Alternatively, use Docker commands directly:  
+   ```bash  
+   docker build . --target bolt-ai-development
+   ```  
 
-```
-defaults write com.apple.finder AppleShowAllFiles YES
-```
+2. **Run the Container**:  
+   Use Docker Compose profiles to manage environments:  
+   ```bash  
+   docker-compose --profile development up 
+   ```  
 
-**NOTE**: you only have to set the ones you want to use and Ollama doesn't need an API key because it runs locally on your computer:
+   - With the development profile, changes to your code will automatically reflect in the running container (hot reloading).  
 
-Get your GROQ API Key here: https://console.groq.com/keys
+---
 
-Get your Open AI API Key by following these instructions: https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key
+### Entering API Keys
 
-Get your Anthropic API Key in your account settings: https://console.anthropic.com/settings/keys
+All of your API Keys can be configured directly in the application. Just selecte the provider you want from the dropdown and click the pencile icon to enter your API key.
 
-```
-GROQ_API_KEY=XXX
-OPENAI_API_KEY=XXX
-ANTHROPIC_API_KEY=XXX
-```
+---
 
-Optionally, you can set the debug level:
+### Update Your Local Version to the Latest
 
-```
-VITE_LOG_LEVEL=debug
-```
+To keep your local version of bolt.diy up to date with the latest changes, follow these steps for your operating system:
 
-**Important**: Never commit your `.env.local` file to version control. It's already included in .gitignore.
+#### 1. **Navigate to your project folder**  
+   Navigate to the directory where you cloned the repository and open a terminal:
 
-## Run with Docker
+#### 2. **Fetch the Latest Changes**  
+   Use Git to pull the latest changes from the main repository:
 
-Prerequisites:
+   ```bash
+   git pull origin main
+   ```
 
-Git and Node.js as mentioned above, as well as Docker: https://www.docker.com/
+#### 3. **Update Dependencies**  
+   After pulling the latest changes, update the project dependencies by running the following command:
 
-### 1a. Using Helper Scripts
+   ```bash
+   pnpm install
+   ```
 
-NPM scripts are provided for convenient building:
+#### 4. **Run the Application**  
+   Once the updates are complete, you can start the application again with:
 
-```bash
-# Development build
-npm run dockerbuild
+   ```bash
+   pnpm run dev
+   ```
 
-# Production build
-npm run dockerbuild:prod
-```
+This ensures that you're running the latest version of bolt.diy and can take advantage of all the newest features and bug fixes.
 
-### 1b. Direct Docker Build Commands (alternative to using NPM scripts)
-
-You can use Docker's target feature to specify the build environment instead of using NPM scripts if you wish:
-
-```bash
-# Development build
-docker build . --target bolt-ai-development
-
-# Production build
-docker build . --target bolt-ai-production
-```
-
-### 2. Docker Compose with Profiles to Run the Container
-
-Use Docker Compose profiles to manage different environments:
-
-```bash
-# Development environment
-docker-compose --profile development up
-
-# Production environment
-docker-compose --profile production up
-```
-
-When you run the Docker Compose command with the development profile, any changes you
-make on your machine to the code will automatically be reflected in the site running
-on the container (i.e. hot reloading still applies!).
-
-## Run Without Docker
-
-1. Install dependencies using Terminal (or CMD in Windows with admin permissions):
-
-```
-pnpm install
-```
-
-If you get an error saying "command not found: pnpm" or similar, then that means pnpm isn't installed. You can install it via this:
-
-```
-sudo npm install -g pnpm
-```
-
-2. Start the application with the command:
-
-```bash
-pnpm run dev
-```
-
-## Super Important Note on Running Ollama Models
-
-Ollama models by default only have 2048 tokens for their context window. Even for large models that can easily handle way more.
-This is not a large enough window to handle the Bolt.new/oTToDev prompt! You have to create a version of any model you want
-to use where you specify a larger context window. Luckily it's super easy to do that.
-
-All you have to do is:
-
-- Create a file called "Modelfile" (no file extension) anywhere on your computer
-- Put in the two lines:
-
-```
-FROM [Ollama model ID such as qwen2.5-coder:7b]
-PARAMETER num_ctx 32768
-```
-
-- Run the command: 
-
-```
-ollama create -f Modelfile [your new model ID, can be whatever you want (example: qwen2.5-coder-extra-ctx:7b)]
-```
-
-Now you have a new Ollama model that isn't heavily limited in the context length like Ollama models are by default for some reason.
-You'll see this new model in the list of Ollama models along with all the others you pulled!
-
-## Adding New LLMs:
-
-To make new LLMs available to use in this version of Bolt.new, head on over to `app/utils/constants.ts` and find the constant MODEL_LIST. Each element in this array is an object that has the model ID for the name (get this from the provider's API documentation), a label for the frontend model dropdown, and the provider. 
-
-By default, Anthropic, OpenAI, Groq, and Ollama are implemented as providers, but the YouTube video for this repo covers how to extend this to work with more providers if you wish!
-
-When you add a new model to the MODEL_LIST array, it will immediately be available to use when you run the app locally or reload it. For Ollama models, make sure you have the model installed already before trying to use it here!
+---
 
 ## Available Scripts
 
-- `pnpm run dev`: Starts the development server.
-- `pnpm run build`: Builds the project.
-- `pnpm run start`: Runs the built application locally using Wrangler Pages. This script uses `bindings.sh` to set up necessary bindings so you don't have to duplicate environment variables.
-- `pnpm run preview`: Builds the project and then starts it locally, useful for testing the production build. Note, HTTP streaming currently doesn't work as expected with `wrangler pages dev`.
-- `pnpm test`: Runs the test suite using Vitest.
-- `pnpm run typecheck`: Runs TypeScript type checking.
-- `pnpm run typegen`: Generates TypeScript types using Wrangler.
-- `pnpm run deploy`: Builds the project and deploys it to Cloudflare Pages.
+- **`pnpm run dev`**: Starts the development server.
+- **`pnpm run build`**: Builds the project.
+- **`pnpm run start`**: Runs the built application locally using Wrangler Pages.
+- **`pnpm run preview`**: Builds and runs the production build locally.
+- **`pnpm test`**: Runs the test suite using Vitest.
+- **`pnpm run typecheck`**: Runs TypeScript type checking.
+- **`pnpm run typegen`**: Generates TypeScript types using Wrangler.
+- **`pnpm run deploy`**: Deploys the project to Cloudflare Pages.
+- **`pnpm run lint:fix`**: Automatically fixes linting issues.
 
-## Development
+---
 
-To start the development server:
+## Contributing
 
-```bash
-pnpm run dev
-```
+We welcome contributions! Check out our [Contributing Guide](CONTRIBUTING.md) to get started.
 
-This will start the Remix Vite development server. You will need Google Chrome Canary to run this locally if you use Chrome! It's an easy install and a good browser for web development anyway.
+---
 
-## Tips and Tricks
+## Roadmap
 
-Here are some tips to get the most out of Bolt.new:
+Explore upcoming features and priorities on our [Roadmap](https://roadmap.sh/r/ottodev-roadmap-2ovzo).
 
-- **Be specific about your stack**: If you want to use specific frameworks or libraries (like Astro, Tailwind, ShadCN, or any other popular JavaScript framework), mention them in your initial prompt to ensure Bolt scaffolds the project accordingly.
+---
 
-- **Use the enhance prompt icon**: Before sending your prompt, try clicking the 'enhance' icon to have the AI model help you refine your prompt, then edit the results before submitting.
+## FAQ
 
-- **Scaffold the basics first, then add features**: Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps Bolt understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
-
-- **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask Bolt to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
+For answers to common questions, issues, and to see a list of recommended models, visit our [FAQ Page](FAQ.md).
